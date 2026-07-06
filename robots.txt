@@ -1,0 +1,5 @@
+# robots.txt for luck.fyi
+User-agent: *
+Allow: /
+
+Sitemap: https://luck.fyi/sitemap.xml
