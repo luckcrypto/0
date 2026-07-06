@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Luck Journal</title>
+    <link>https://luck.fyi/blog.html</link>
+    <atom:link href="https://luck.fyi/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Guides, strategy and straight talk on crypto and the world's lotteries.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jun 2026 19:25:10 +0000</lastBuildDate>
+    <item>
+      <title>What is luck?</title>
+      <link>https://luck.fyi/what-is-luck.html</link>
+      <guid isPermaLink="true">https://luck.fyi/what-is-luck.html</guid>
+      <pubDate>Sun, 28 Jun 2026 12:00:00 +0000</pubDate>
+      <description>My whole philosophy in one word. Luck isn’t fortune or fate — it’s preparation meeting opportunity. From the lotteries on this site to finding Bitcoin in 2009, here’s what that really means — and why “they just got lucky” misses the point entirely.</description>
+    </item>
+  </channel>
+</rss>
