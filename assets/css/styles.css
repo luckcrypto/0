@@ -1,0 +1,48 @@
+.slider {
+    margin-top: -58px;
+}
+
+.slide {
+  
+  width: 100%;
+  
+}
+
+.lottomixer {
+    height: auto;
+    max-height: 340px;
+        margin-bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all var(--transition-normal);
+}
+
+canvas {
+transform: scale(0.68);
+}
+
+/* ---- cursor policy: arrow everywhere, pointer only on interactive things ---- */
+* { cursor: default; }
+
+a, button, label, summary, select,
+[role="button"], [role="link"], [role="tab"],
+.btn, [onclick] {
+  cursor: pointer;
+}
+
+/* text fields keep the I-beam */
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+[contenteditable="true"] {
+  cursor: text;
+}
+
+/* clickable inputs */
+input[type="checkbox"], input[type="radio"], input[type="range"] { cursor: pointer; }
+
+/* disabled controls */
+:disabled, [disabled], [aria-disabled="true"] { cursor: not-allowed; }
+
+
+.wrap.center :is(.title,.lead),.wrap[style*="text-align:center"] :is(.title,.lead){margin-inline:auto}
