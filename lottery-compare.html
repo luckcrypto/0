@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f5f6f9" id="themeColorMeta">
-<script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#131022":"#f5f6f9");})();</script>
+<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
 <title>Compare 18 World Lotteries — Odds, Prices &amp; Formats | Luck.fyi</title>
 <meta name="description" content="Compare the world’s 18 biggest lotteries side by side — jackpot odds, any-prize odds, ticket price, draw days and number formats.">
 <meta name="keywords" content="compare lotteries, lottery odds comparison, best lottery odds, Powerball vs EuroMillions, cheapest lottery, world lotteries">
@@ -839,7 +839,8 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About us</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="learn.html">Learn hub</a></li>
+          <li><a href="learn.html">Learn hub</a>
+              <a href="what-is-luck.html">What is luck?</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="shop.html">Shop</a></li>
         </ul>
@@ -1244,7 +1245,7 @@ var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isInt
 els.forEach(function(e){io.observe(e);});}
 if(document.readyState!=='loading')start();else window.addEventListener('DOMContentLoaded',start);})();
 </script>
-<script>(function(){var b=document.getElementById("themeToggle");if(!b)return;var m=document.getElementById("themeColorMeta")||document.querySelector('meta[name="theme-color"]');function sync(){var l=document.documentElement.classList.contains("light");b.textContent=l?"☀️":"🌙";if(m)m.setAttribute("content",l?"#f5f6f9":"#131022");}sync();b.addEventListener("click",function(){var l=document.documentElement.classList.toggle("light");try{localStorage.setItem("luck-theme",l?"light":"dark");}catch(e){}sync();});})();</script>
+<script>(function(){var b=document.getElementById("themeToggle");if(!b)return;var m=document.getElementById("themeColorMeta")||document.querySelector('meta[name="theme-color"]');function sync(){var l=document.documentElement.classList.contains("light");b.textContent=l?"☀️":"🌙";if(m)m.setAttribute("content",l?"#ffffff":"#15111f");}sync();b.addEventListener("click",function(){var l=document.documentElement.classList.toggle("light");try{localStorage.setItem("luck-theme",l?"light":"dark");}catch(e){}sync();});})();</script>
 <style>/* calm domed primary buttons — site-wide evolution */
 .btn:not(.crimson){--bg:transparent;--fg:var(--text);border:1px solid var(--line-2);background:radial-gradient(120% 95% at 50% 16%,rgba(255,255,255,.13),rgba(255,255,255,0) 55%),linear-gradient(180deg,#2c2449,#1d1834);box-shadow:inset 0 1.5px 1px rgba(255,255,255,.22),inset 0 -2px 3px rgba(0,0,0,.45),0 4px 10px -6px rgba(0,0,0,.5)}
 html.light .btn:not(.crimson){background:radial-gradient(120% 95% at 50% 16%,#fff,rgba(255,255,255,0) 60%),linear-gradient(180deg,#fff,rgba(17,21,38,.05));box-shadow:inset 0 1.5px 1px #fff,inset 0 -2px 3px rgba(17,21,38,.13),0 4px 10px -8px rgba(17,21,38,.2)}
@@ -1337,6 +1338,64 @@ html.light .mn-burger,html.light .mn-theme{background:radial-gradient(120% 95% a
 html.light{--cardg:radial-gradient(120% 70% at 50% 0%,#ffffff,rgba(255,255,255,0) 62%),linear-gradient(180deg,#ffffff,#f1f2f7)}
 .acard,.myth,.ic-card,.navcard,.dir-col,.panel,.scard,.perk,.pillar,.yt-card,.yt-fallback,.x-embed,.tweet,.chartcard,.authorbox,.tool,.ind,.t10-row,.gen,.step,.ct-panel{background:var(--cardg);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.06),inset 0 -3px 5px rgba(0,0,0,.32),0 12px 26px -20px rgba(0,0,0,.5)}
 html.light :is(.acard,.myth,.ic-card,.navcard,.dir-col,.panel,.scard,.perk,.pillar,.yt-card,.yt-fallback,.x-embed,.tweet,.chartcard,.authorbox,.tool,.ind,.t10-row,.gen,.step,.ct-panel){background:var(--cardg);box-shadow:inset 0 1.5px 0 #fff,inset 0 -3px 5px rgba(17,21,38,.11),0 12px 26px -22px rgba(17,21,38,.25)}
+</style>
+<style>/* cursor hygiene: no I-beam on non-text UI */
+button,a,.btn,summary,label,select,[role=button],[role=tab],.mn-mark,.ball,.chip,.t10-cta,.ct-tab,.mn-burger,.mn-theme,.vip,input[type=button],input[type=submit],input[type=checkbox],input[type=radio]{cursor:pointer}
+h1,h2,h3,h4,h5,h6,.eyebrow,.title,.lead,.sub,span,div,section,article,nav,footer,header,li{cursor:default}
+p,input[type=text],input[type=email],input[type=number],input[type=search],textarea,[contenteditable]{cursor:auto}
+</style>
+<script>/* AOS safety net — reveal content if AOS JS never loads (CDN blocked/slow) */
+(function(){
+  function reveal(){document.querySelectorAll('[data-aos]:not(.aos-animate)').forEach(function(e){
+    if(getComputedStyle(e).opacity<0.1){e.style.opacity='1';e.style.transform='none';}});}
+  // if AOS hasn't initialised within 1.2s, force-reveal everything
+  setTimeout(function(){if(typeof AOS==='undefined')reveal();},1200);
+  window.addEventListener('load',function(){setTimeout(function(){if(typeof AOS==='undefined')reveal();},400);});
+})();
+</script>
+<div class="mn-scrim" aria-hidden="true"></div>
+<style>/* Apple-style mega-menu scrim: blurs the page beneath an open panel (desktop only) */
+.mn-scrim{position:fixed;inset:0;z-index:400;opacity:0;visibility:hidden;pointer-events:none;
+  background:rgba(150,170,220,.10);
+  -webkit-backdrop-filter:blur(16px) saturate(125%) brightness(.99);
+  backdrop-filter:blur(16px) saturate(125%) brightness(.99);
+  transition:opacity .26s ease,visibility .26s ease}
+html.light .mn-scrim{
+  background:rgba(228,236,250,.45);
+  -webkit-backdrop-filter:blur(16px) saturate(140%) brightness(1.06);
+  backdrop-filter:blur(16px) saturate(140%) brightness(1.06)}
+/* soft silvery-blue panel shadow — no harsh black */
+.mn-panel{box-shadow:0 30px 64px -34px rgba(24,34,72,.55)}
+html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
+@media(min-width:961px){
+  html.mn-blur .mn-scrim{opacity:1;visibility:visible;pointer-events:auto}
+}
+@media(prefers-reduced-motion:reduce){.mn-scrim{transition:none}}
+</style>
+<script>/* sync scrim with open mega-menu group (desktop only) */
+(function(){
+  var mn=document.querySelector('.mn'); if(!mn) return;
+  var scrim=document.querySelector('.mn-scrim'); if(!scrim) return;
+  var groups=[].slice.call(mn.querySelectorAll('.mn-group')); if(!groups.length) return;
+  var desktop=window.matchMedia('(min-width:961px)');
+  function sync(){
+    var open=desktop.matches&&groups.some(function(g){return g.classList.contains('is-open');});
+    document.documentElement.classList.toggle('mn-blur',open);
+  }
+  var mo=new MutationObserver(sync);
+  groups.forEach(function(g){mo.observe(g,{attributes:true,attributeFilter:['class']});});
+  if(desktop.addEventListener)desktop.addEventListener('change',sync); else if(desktop.addListener)desktop.addListener(sync);
+  scrim.addEventListener('click',function(){
+    groups.forEach(function(g){g.classList.remove('is-open');
+      var t=g.querySelector('.mn-top'); if(t)t.setAttribute('aria-expanded','false');});
+    sync();
+  });
+  sync();
+})();
+</script>
+<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
+html{color-scheme:dark}
+html.light{color-scheme:light}
 </style>
 </body>
 </html>
