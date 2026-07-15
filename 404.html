@@ -5,7 +5,8 @@
 <meta charset="utf-8">
   <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
 <title>Page Not Found (404) | Luck.fyi</title>
 <meta name="description" content="That page has moved or never existed. Head back to the generators, results and crypto tools on Luck.fyi.">
@@ -22,7 +23,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -556,6 +557,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1210,9 +1217,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

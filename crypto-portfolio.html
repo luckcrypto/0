@@ -4,10 +4,11 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Crypto Portfolio Tracker — Account-Free &amp; Private | Luck.fyi</title>
-<meta name="description" content="Track your crypto holdings and transactions with live P&amp;L from CoinGecko — no account, no sign-up, no data leaving your device.">
+<title>Free Crypto Portfolio Tracker — Account-Free</title>
+<meta name="description" content="Track your crypto portfolio with zero sign-up and zero data stored — everything stays in your browser. Private by design, free forever.">
 <meta name="keywords" content="crypto portfolio tracker, no account portfolio, self custody portfolio, crypto P&L tracker, encrypted portfolio backup, sha256 verify, transaction tracker, watchlist">
 <link rel="canonical" href="https://luck.fyi/crypto-portfolio.html">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -15,17 +16,17 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luck.fyi">
-<meta property="og:title" content="Crypto Portfolio Tracker — Account-Free &amp; Private | Luck.fyi">
-<meta property="og:description" content="Track your crypto holdings and transactions with live P&amp;L from CoinGecko — no account, no sign-up, no data leaving your device.">
+<meta property="og:title" content="Free Crypto Portfolio Tracker — Account-Free">
+<meta property="og:description" content="Track your crypto portfolio with zero sign-up and zero data stored — everything stays in your browser. Private by design, free forever.">
 <meta property="og:url" content="https://luck.fyi/crypto-portfolio.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Crypto Portfolio Tracker — Account-Free &amp; Private | Luck.fyi">
-<meta name="twitter:description" content="Track your crypto holdings and transactions with live P&amp;L from CoinGecko — no account, no sign-up, no data leaving your device.">
+<meta name="twitter:title" content="Free Crypto Portfolio Tracker — Account-Free">
+<meta name="twitter:description" content="Track your crypto portfolio with zero sign-up and zero data stored — everything stays in your browser. Private by design, free forever.">
 
 <!-- Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGEWBYW8B7"></script>
@@ -56,7 +57,9 @@ gtag('config', 'AW-994002853');
 <!-- Schema: SoftwareApplication -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Luck.fyi Crypto Portfolio Tracker", "applicationCategory": "FinanceApplication", "operatingSystem": "Web browser", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "An account-free crypto portfolio and watchlist tracker with live prices from CoinGecko. Saves an optionally-encrypted, SHA-256-verifiable backup file to the user's own device, with no server or sign-up.", "featureList": ["No account required", "Live prices from CoinGecko", "Transaction-based P&L with average cost basis", "Watchlist", "AES-GCM encrypted backup file", "SHA-256 integrity verification", "Optional offline browser caching", "100% client-side and private"]}</script>
 <!-- Schema: FAQ -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need an account to use this?", "acceptedAnswer": {"@type": "Answer", "text": "No. There is no account, login or sign-up. Everything runs in your browser. Your portfolio exists only on your device and in the backup file you choose to save."}}, {"@type": "Question", "name": "Is the SHA-256 part actually encryption?", "acceptedAnswer": {"@type": "Answer", "text": "No. SHA-256 is a one-way hash used here as a tamper-evident checksum, so on loading a file the tool can prove it was not changed. Optional real encryption is provided separately using AES-GCM, with a key derived from your password via PBKDF2. If you set a password, the file is genuinely encrypted; if not, it is plain text with a verifiable checksum."}}, {"@type": "Question", "name": "What happens if I lose my backup file or password?", "acceptedAnswer": {"@type": "Answer", "text": "The data is gone. This is true self-custody: there is no server, no recovery email and no reset. Keep more than one copy of your backup file, and if you encrypt it, store the password somewhere safe. An encrypted file with a forgotten password cannot be recovered by anyone, including us."}}, {"@type": "Question", "name": "Does my portfolio data ever leave my device?", "acceptedAnswer": {"@type": "Answer", "text": "No. The only network request is to CoinGecko to fetch public market prices. Your holdings, transactions and backup file are processed entirely in your browser and are never sent to us or any server."}}, {"@type": "Question", "name": "Is this financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. This is a record-keeping and tracking tool only. Prices are volatile and figures are estimates based on public data. Nothing here is financial, investment or tax advice. Always do your own research and consider a qualified professional."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an account to use this?","acceptedAnswer":{"@type":"Answer","text":"No. There is no account, login or sign-up. Everything runs in your browser; your portfolio exists only on your device and in the backup file you choose to save."}},{"@type":"Question","name":"Is the SHA-256 part actually encryption?","acceptedAnswer":{"@type":"Answer","text":"No — SHA-256 is a one-way hash used as a tamper-evident checksum, so the tool can prove a loaded file was not changed. Real encryption is separate and optional: set a password and the file is encrypted with AES-GCM, with the key derived from your password via PBKDF2. No password means plain text plus a verifiable check"}},{"@type":"Question","name":"What if I lose my file or password?","acceptedAnswer":{"@type":"Answer","text":"The data is gone — this is true self-custody with no server and no recovery. Keep more than one copy of your backup, and if you encrypt it, store the password safely. An encrypted file with a forgotten password cannot be recovered by anyone."}},{"@type":"Question","name":"Does my data ever leave my device?","acceptedAnswer":{"@type":"Answer","text":"No. The only network request is to CoinGecko for public prices. Your holdings, transactions and backup file are processed entirely in your browser and never sent to us or any server."}},{"@type":"Question","name":"Why is a coin I own missing a price?","acceptedAnswer":{"@type":"Answer","text":"Live prices load the top coins by market cap. A very small or new coin outside that set will still be tracked with your cost data, but may show no live price until it is covered. Your amounts and history are never lost."}}]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -483,6 +486,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1581,9 +1590,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

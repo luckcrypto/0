@@ -4,9 +4,10 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Luck Telegram Community &middot; Luck.fyi</title>
+<title>Luck.fyi Telegram Community — Join the Chat</title>
 <meta name="description" content="The Luck Telegram Community &mdash; voice notes, high-conviction ideas, early tool access and direct answers. About $50/month in Telegram Stars, cancel any time.">
 <meta name="keywords" content="luck trading vip, crypto vip telegram, trading community, conviction trading, crypto research membership">
 <link rel="canonical" href="https://luck.fyi/community.html">
@@ -15,16 +16,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luck.fyi">
-<meta property="og:title" content="Luck Telegram Community &middot; Luck.fyi">
+<meta property="og:title" content="Luck.fyi Telegram Community — Join the Chat">
 <meta property="og:description" content="The Luck Telegram Community &mdash; voice notes, high-conviction ideas, early tool access and direct answers. About $50/month in Telegram Stars, cancel any time.">
 <meta property="og:url" content="https://luck.fyi/community.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Luck Telegram Community &middot; Luck.fyi">
+<meta name="twitter:title" content="Luck.fyi Telegram Community — Join the Chat">
 <meta name="twitter:description" content="The Luck Telegram Community &mdash; voice notes, high-conviction ideas, early tool access and direct answers. About $50/month in Telegram Stars, cancel any time.">
 
 <!-- Analytics -->
@@ -54,8 +55,6 @@ gtag('config', 'AW-994002853');
 <!-- Schema: Breadcrumb -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://luck.fyi/"}, {"@type": "ListItem", "position": 2, "name": "Community", "item": "https://luck.fyi/community.html"}]}</script>
 <!-- Schema: FAQ -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Luck Trading financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything shared is education, opinion and analysis — not personalised financial, investment or tax advice, and not a recommendation to buy or sell any asset. Always do your own research and, where appropriate, speak to a licensed professional before acting."}}, {"@type": "Question", "name": "Do you guarantee profits?", "acceptedAnswer": {"@type": "Answer", "text": "No — and anyone who does is misleading you. Crypto is highly volatile and you can lose some or all of your capital; with leverage you can lose more than you put in. Past performance is not indicative of future results. What you get is a disciplined framework and high-conviction ideas, not certainty."}}, {"@type": "Question", "name": "What do I actually get in the Telegram Community?", "acceptedAnswer": {"@type": "Answer", "text": "Voice notes, portfolio insights, high-conviction idea flow, direct Q&A, early access to new tools, and the best affiliate deals. It is a research-and-community membership — not managed accounts, not signals you are obliged to follow, and not a promise of returns. You always make your own decisions."}}, {"@type": "Question", "name": "Can I cancel?", "acceptedAnswer": {"@type": "Answer", "text": "It is about $50/month (in Telegram Stars) — no lock-in, cancel any time inside Telegram. If anything is unclear, message us before you join rather than after."}}, {"@type": "Question", "name": "Are the exchange and wallet links sponsored?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The exchange and hardware-wallet links are affiliate links and may earn a commission at no extra cost to you; any bonus or discount is provided by that company. Only use venues and products that are legal and available in your jurisdiction, and verify every URL yourself."}}, {"@type": "Question", "name": "Who is behind Luck Trading?", "acceptedAnswer": {"@type": "Answer", "text": "An independent trader and creator who shares the same conviction-first framework publicly on the Luck Crypto YouTube channel. Not a licensed broker, fund or advisor — a research and education project built around long-term ownership."}}]}</script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -455,6 +454,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1108,9 +1113,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

@@ -4,9 +4,10 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Learn — Crypto, Lottery &amp; Odds Guides | Luck.fyi</title>
+<title>Learn Crypto, Lottery &amp; Odds — Free Guides</title>
 <meta name="description" content="Guides and explainers on lottery odds, provably-fair randomness and crypto basics — learn how Luck.fyi's tools work and how to play smarter.">
 <meta name="keywords" content="crypto guides, lottery odds explained, how lottery odds work, dollar cost averaging, seed phrase safety, provably fair explained, house edge, random number generator, expected value lottery, implied probability">
 <link rel="canonical" href="https://luck.fyi/learn.html">
@@ -15,16 +16,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luck.fyi">
-<meta property="og:title" content="Learn — Crypto, Lottery &amp; Odds Guides | Luck.fyi">
+<meta property="og:title" content="Learn Crypto, Lottery &amp; Odds — Free Guides">
 <meta property="og:description" content="Guides and explainers on lottery odds, provably-fair randomness and crypto basics — learn how Luck.fyi's tools work and how to play smarter.">
 <meta property="og:url" content="https://luck.fyi/learn.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Learn — Crypto, Lottery &amp; Odds Guides | Luck.fyi">
+<meta name="twitter:title" content="Learn Crypto, Lottery &amp; Odds — Free Guides">
 <meta name="twitter:description" content="Guides and explainers on lottery odds, provably-fair randomness and crypto basics — learn how Luck.fyi's tools work and how to play smarter.">
 
 <!-- Analytics -->
@@ -56,7 +57,6 @@ gtag('config', 'AW-994002853');
 <!-- Schema: ItemList of guides -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Luck.fyi Guides", "itemListOrder": "https://schema.org/ItemListUnordered", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Crypto, explained without the hype", "url": "https://luck.fyi/learn.html#crypto-basics"}, {"@type": "ListItem", "position": 2, "name": "How to read crypto prices, market cap and charts", "url": "https://luck.fyi/learn.html#reading-prices"}, {"@type": "ListItem", "position": 3, "name": "Dollar-cost averaging vs lump sum", "url": "https://luck.fyi/learn.html#dca"}, {"@type": "ListItem", "position": 4, "name": "Seed phrases, paper wallets and staying safe", "url": "https://luck.fyi/learn.html#wallet-safety"}, {"@type": "ListItem", "position": 5, "name": "Volatility, risk and position sizing", "url": "https://luck.fyi/learn.html#volatility-risk"}, {"@type": "ListItem", "position": 6, "name": "How lottery odds really work", "url": "https://luck.fyi/learn.html#odds"}, {"@type": "ListItem", "position": 7, "name": "Random numbers, entropy and why it matters", "url": "https://luck.fyi/learn.html#entropy"}, {"@type": "ListItem", "position": 8, "name": "Powerball, Mega Millions and EuroMillions compared", "url": "https://luck.fyi/learn.html#games"}, {"@type": "ListItem", "position": 9, "name": "Expected value, jackpots and lump sum vs annuity", "url": "https://luck.fyi/learn.html#ev-annuity"}, {"@type": "ListItem", "position": 10, "name": "Hot and cold numbers: the myth, examined", "url": "https://luck.fyi/learn.html#hot-cold"}, {"@type": "ListItem", "position": 11, "name": "House edge and RTP, explained", "url": "https://luck.fyi/learn.html#house-edge"}, {"@type": "ListItem", "position": 12, "name": "Provably fair and SHA-256, step by step", "url": "https://luck.fyi/learn.html#provably-fair"}, {"@type": "ListItem", "position": 13, "name": "Odds formats and implied probability", "url": "https://luck.fyi/learn.html#odds-formats"}, {"@type": "ListItem", "position": 14, "name": "Gambling, risk and getting help", "url": "https://luck.fyi/learn.html#responsible"}]}</script>
 <!-- Schema: FAQ -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is anything on Luck.fyi financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything here is educational. Crypto content is not financial, investment or tax advice, lottery content does not improve your odds of winning, and the games are play-money demos. Always do your own research and consider speaking to a qualified professional before making money decisions."}}, {"@type": "Question", "name": "Can any tool or system improve my lottery odds?", "acceptedAnswer": {"@type": "Answer", "text": "No. Lottery draws are independent random events. A number generator only helps you pick quickly and avoid bias; it cannot change the fixed odds, which for major lotteries are often worse than 1 in 100 million. So-called hot and cold number systems have no predictive power."}}, {"@type": "Question", "name": "What does provably fair mean?", "acceptedAnswer": {"@type": "Answer", "text": "It is a method where a game's outcome is derived from a cryptographic hash (SHA-256) of a committed server seed, your client seed and a bet counter. Because the server-seed hash is shown before you play, you can later reveal the seed and re-compute every result yourself, proving nothing was changed after the fact."}}, {"@type": "Question", "name": "Where does the price data come from?", "acceptedAnswer": {"@type": "Answer", "text": "Live market data is loaded on demand from the CoinGecko API. We never display invented or hard-coded prices; if the data cannot be loaded, the tools show a clear error rather than fake numbers."}}, {"@type": "Question", "name": "Is the gambling content encouraging me to gamble?", "acceptedAnswer": {"@type": "Answer", "text": "No. The casino and exchange are risk-free simulators built to show how house edge, odds and fairness work. Real gambling carries serious risk of harm and most players lose over time. If gambling is affecting you, free help is available in the UK via BeGambleAware.org and the National Gambling Helpline on 0808 8020 133."}}]}</script>
 <!-- Schema: Glossary -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Luck.fyi Glossary", "url": "https://luck.fyi/learn.html#glossary", "hasDefinedTerm": [{"@type": "DefinedTerm", "name": "Blockchain", "description": "A shared, append-only ledger of transactions maintained across many computers, with no single owner."}, {"@type": "DefinedTerm", "name": "Seed phrase", "description": "A list of 12 or 24 words that encodes the master key to a crypto wallet. Anyone with it controls the funds, so it must stay secret and offline."}, {"@type": "DefinedTerm", "name": "Market capitalisation", "description": "A coin's price multiplied by its circulating supply. It measures total value, not how expensive one unit looks."}, {"@type": "DefinedTerm", "name": "Dollar-cost averaging", "description": "Investing a fixed amount at regular intervals regardless of price, which smooths out the average entry price over time."}, {"@type": "DefinedTerm", "name": "Volatility", "description": "How much a price swings over time. Higher volatility means bigger potential gains and losses."}, {"@type": "DefinedTerm", "name": "Odds", "description": "The likelihood of an outcome. For lotteries this is fixed by the number of possible combinations and cannot be changed."}, {"@type": "DefinedTerm", "name": "Expected value", "description": "The average result of a bet if repeated many times, found by multiplying each outcome by its probability and summing."}, {"@type": "DefinedTerm", "name": "Entropy", "description": "A measure of genuine randomness or unpredictability. Strong random numbers need a high-entropy source such as the browser's cryptographic generator."}, {"@type": "DefinedTerm", "name": "House edge", "description": "The built-in mathematical advantage a game gives the operator, ensuring players lose on average over time."}, {"@type": "DefinedTerm", "name": "Return to player", "description": "The long-run percentage of wagers a game pays back to players. An RTP of 99% implies a 1% house edge."}, {"@type": "DefinedTerm", "name": "Provably fair", "description": "A cryptographic scheme letting players verify that a game outcome was not altered after they bet, using a committed hash and revealable seeds."}, {"@type": "DefinedTerm", "name": "Implied probability", "description": "The chance of an outcome implied by its odds, useful for comparing prices across decimal, fractional and American formats."}, {"@type": "DefinedTerm", "name": "Annuity", "description": "A lottery payout option that pays the jackpot in instalments over years, rather than a smaller discounted lump sum up front."}]}</script>
 
@@ -447,6 +447,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1470,9 +1476,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

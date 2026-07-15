@@ -4,9 +4,11 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Provably-Fair Crypto Casino · Free Play-Money Demo | Luck.fyi</title>
+<title>Provably-Fair Crypto Casino — Free Play-Money Demo</title>
 <meta name="description" content="A free, provably-fair crypto casino simulator — Crash, Dice, Limbo, Mines and Coin Flip with verifiable SHA-256 fairness.">
 <link rel="canonical" href="https://luck.fyi/casino.html">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -14,14 +16,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Provably-Fair Crypto Casino · Free Play-Money Demo">
+<meta property="og:title" content="Provably-Fair Crypto Casino — Free Play-Money Demo">
 <meta property="og:description" content="A free, provably-fair crypto casino simulator — Crash, Dice, Limbo, Mines and Coin Flip with verifiable SHA-256 fairness.">
 <meta property="og:url" content="https://luck.fyi/casino.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Provably-Fair Crypto Casino · Free Play-Money Demo">
+<meta name="twitter:title" content="Provably-Fair Crypto Casino — Free Play-Money Demo">
 <meta name="twitter:description" content="A free, provably-fair crypto casino simulator — Crash, Dice, Limbo, Mines and Coin Flip with verifiable SHA-256 fairness.">
 
 <!-- Analytics -->
@@ -49,7 +51,9 @@ gtag('config', 'AW-994002853');
 <!-- Schema -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Luck.fyi", "url": "https://luck.fyi", "logo": "https://luck.fyi/assets/img/fav.png", "email": "business@luck.fyi", "sameAs": ["https://x.com/theLuckCrypto", "https://www.instagram.com/luckfyi", "https://www.youtube.com/@LUCKCRYPTO"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://luck.fyi/"}, {"@type": "ListItem", "position": 2, "name": "Demo Casino", "item": "https://luck.fyi/casino.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this real gambling?", "acceptedAnswer": {"@type": "Answer", "text": "No. This is a free play-money simulator for entertainment and education. There is no real wagering, no deposits, no winnings and no withdrawals. Your balance is pretend demo credits that reset whenever you like. Nothing of value can be won or lost."}}, {"@type": "Question", "name": "What does provably fair mean here?", "acceptedAnswer": {"@type": "Answer", "text": "Each round's outcome is generated from a SHA-256 hash of a secret server seed, your client seed and a bet counter (nonce). Before you play, we show you the hash of the server seed as a commitment. At any time you can reveal the server seed and re-compute every past result yourself, proving nothing was changed after the fact. The exact formula is published on the page."}}, {"@type": "Question", "name": "Can I win or lose real money?", "acceptedAnswer": {"@type": "Answer", "text": "No. There is no real money anywhere in this simulator. You cannot deposit, cash out, win or lose anything of value. It exists to demonstrate how casino games and provable fairness work, in a completely risk-free way."}}, {"@type": "Question", "name": "Why does my demo balance tend to go down over time?", "acceptedAnswer": {"@type": "Answer", "text": "Because every game is built with a small house edge, exactly like real casinos. Over many bets the maths guarantees the house wins on average, even when individual rounds are fair. Watching your pretend balance drift down is the lesson: this is precisely why real gambling loses money for players over time."}}, {"@type": "Question", "name": "Is real online gambling safe?", "acceptedAnswer": {"@type": "Answer", "text": "Real gambling carries a serious risk of financial harm and can be addictive. Most players lose money over time by design. Nothing here is encouragement to gamble for real. If gambling is affecting you or someone you know, free, confidential help is available — in the UK, BeGambleAware.org and the National Gambling Helpline on 0808 8020 133. This simulator is strictly for those 18 and over."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this real gambling?","acceptedAnswer":{"@type":"Answer","text":"No. It's a free play-money simulator for entertainment and education. There's no real wagering, no deposits, no winnings, no withdrawals. Your balance is pretend demo credits that reset whenever you like — nothing of value can be won or lost."}},{"@type":"Question","name":"What does \"provably fair\" mean here?","acceptedAnswer":{"@type":"Answer","text":"Each round's outcome comes from a SHA-256 hash of a secret server seed, your client seed and a bet counter (nonce). The hash of the server seed is shown before you play, as a commitment. Rotate the seed any time to reveal it and re-compute every past result yourself — proving nothing was altered after the fact."}},{"@type":"Question","name":"Can I win or lose real money?","acceptedAnswer":{"@type":"Answer","text":"No — there's no real money anywhere. You can't deposit, cash out, win or lose anything of value. It's a completely risk-free way to see how casino games and provable fairness work."}},{"@type":"Question","name":"Why does my demo balance tend to go down?","acceptedAnswer":{"@type":"Answer","text":"Because every game has a small house edge, exactly like a real casino. Over many bets the maths guarantees the house wins on average, even though each round is fair. That slow drift down is precisely why real gambling loses money for players over time."}},{"@type":"Question","name":"Is real online gambling safe?","acceptedAnswer":{"@type":"Answer","text":"Real gambling carries a serious risk of financial harm and can be addictive; most players lose over time by design. Nothing here is encouragement to gamble for real. If gambling is affecting you, free confidential help is available — in the UK, BeGambleAware.org and the National Gambling Helpline on 0808 8020 133. 18+ "}}]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -488,6 +492,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1680,9 +1690,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

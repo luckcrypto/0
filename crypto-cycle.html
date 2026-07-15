@@ -4,9 +4,10 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Crypto Cycle Indicator — Bitcoin Cycle Position Score | Luck.fyi</title>
+<title>Bitcoin Cycle Indicator — Live Position Score</title>
 <meta name="description" content="The Crypto Cycle Indicator blends six price-based Bitcoin cycle models — Pi Cycle Top, Mayer Multiple, Golden Ratio.">
 <meta name="keywords" content="bitcoin cycle indicator, crypto cycle index, pi cycle top, mayer multiple, bitcoin cycle top, 200 week moving average heatmap, golden ratio multiplier, bitcoin bull market top">
 <link rel="canonical" href="https://luck.fyi/crypto-cycle.html">
@@ -15,16 +16,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luck.fyi">
-<meta property="og:title" content="Crypto Cycle Indicator — Bitcoin Cycle Position Score">
+<meta property="og:title" content="Bitcoin Cycle Indicator — Live Position Score">
 <meta property="og:description" content="The Crypto Cycle Indicator blends six price-based Bitcoin cycle models — Pi Cycle Top, Mayer Multiple, Golden Ratio.">
 <meta property="og:url" content="https://luck.fyi/crypto-cycle.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Crypto Cycle Indicator">
+<meta name="twitter:title" content="Bitcoin Cycle Indicator — Live Position Score">
 <meta name="twitter:description" content="The Crypto Cycle Indicator blends six price-based Bitcoin cycle models — Pi Cycle Top, Mayer Multiple, Golden Ratio.">
 
 <!-- Analytics -->
@@ -58,7 +59,9 @@ gtag('config', 'AW-994002853');
 <!-- Schema: DefinedTermSet (indicator glossary) -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Bitcoin Cycle Indicator Glossary", "hasDefinedTerm": [{"@type": "DefinedTerm", "name": "Pi Cycle Top", "description": "Compares the 111-day moving average to twice the 350-day moving average. Historically, the 111DMA crossing above 2× the 350DMA has marked major Bitcoin cycle tops."}, {"@type": "DefinedTerm", "name": "Mayer Multiple", "description": "Bitcoin price divided by its 200-day moving average. Readings far above 2.4 have historically signalled overextension; readings below 1 have marked value zones."}, {"@type": "DefinedTerm", "name": "Golden Ratio Multiplier", "description": "Bitcoin price relative to its 350-day moving average and Fibonacci multiples of it, used to identify potential intra-cycle and cycle tops."}, {"@type": "DefinedTerm", "name": "2-Year MA Multiplier", "description": "Bitcoin price relative to its 2-year (730-day) moving average and a 5× band, marking long-term accumulation and distribution zones."}, {"@type": "DefinedTerm", "name": "200-Week MA Heatmap", "description": "Bitcoin price relative to its 200-week (1,400-day) moving average. Cycle bottoms have historically formed near this average."}, {"@type": "DefinedTerm", "name": "RSI", "description": "Relative Strength Index, a momentum oscillator from 0–100 measuring the speed and magnitude of recent price changes."}]}</script>
 <!-- Schema: FAQ -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Crypto Cycle Indicator?", "acceptedAnswer": {"@type": "Answer", "text": "It is a transparent 0–100 score that estimates where Bitcoin sits in its market cycle by blending six well-known price-based models — Pi Cycle Top, Mayer Multiple, Golden Ratio Multiplier, 2-Year MA Multiplier, 200-Week MA Heatmap and RSI. A low score suggests historically cheap, accumulation-like conditions; a high score suggests historically overheated, cycle-top-like conditions. It is an educational tool, not financial advice."}}, {"@type": "Question", "name": "How is it different from the CBBI?", "acceptedAnswer": {"@type": "Answer", "text": "The CBBI also includes on-chain metrics such as NUPL/RUPL, Reserve Risk, RHODL Ratio, MVRV Z-Score and the Puell Multiple. Those require processed blockchain data that is not available to a browser-based tool, so the Crypto Cycle Indicator deliberately uses only price-based models that can be computed openly and verified. We would rather show fewer signals honestly than estimate on-chain data we cannot source."}}, {"@type": "Question", "name": "Is the Crypto Cycle Indicator financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is an educational model for information only and must not be used as a buy, sell or hold signal. Every indicator it uses is a backward-looking heuristic that can stay 'overheated' or 'cheap' for a long time and can be wrong. Past cycles do not guarantee future ones. Always do your own research and consider a qualified financial adviser."}}, {"@type": "Question", "name": "How accurate is it?", "acceptedAnswer": {"@type": "Answer", "text": "There is no reliable way to predict market tops or bottoms. These models described past cycles reasonably well in hindsight, but each cycle has differed, and several models 'top out' at lower readings than in earlier cycles. Treat the score as one rough lens among many, never as certainty."}}, {"@type": "Question", "name": "What data does it use?", "acceptedAnswer": {"@type": "Answer", "text": "Daily Bitcoin closing prices in US dollars, loaded live from public market data (Binance public market data, with CoinGecko as a fallback). All calculations run in your browser; nothing is sent to a server."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Crypto Cycle Indicator?","acceptedAnswer":{"@type":"Answer","text":"A transparent 0–100 score estimating where Bitcoin sits in its market cycle, blending six price-based models. Low suggests historically cheap conditions; high suggests historically overheated ones. It is educational, not financial advice."}},{"@type":"Question","name":"How is it different from the CBBI?","acceptedAnswer":{"@type":"Answer","text":"The CBBI also uses on-chain metrics (NUPL/RUPL, Reserve Risk, RHODL, MVRV Z-Score, Puell Multiple) that need processed blockchain data a browser can't source or verify. We use only price-based models that can be computed openly — narrower, but fully transparent and complementary to on-chain views."}},{"@type":"Question","name":"Is this financial advice?","acceptedAnswer":{"@type":"Answer","text":"No. It's an educational model for information only and must not be used as a buy, sell or hold signal. Every indicator is a backward-looking heuristic that can be wrong and can stay extreme for a long time. Do your own research and consider a qualified adviser."}},{"@type":"Question","name":"How accurate is it?","acceptedAnswer":{"@type":"Answer","text":"There's no reliable way to predict tops or bottoms. These models described past cycles reasonably well in hindsight, but each cycle has differed and several now top out at lower readings. Treat the score as one rough lens, never as certainty."}},{"@type":"Question","name":"What data does it use?","acceptedAnswer":{"@type":"Answer","text":"Daily Bitcoin closing prices in USD, loaded live from public market data (Binance, with CoinGecko as a fallback). All calculations run in your browser; nothing is sent to a server."}},{"@type":"Question","name":"Why might the tool show no data?","acceptedAnswer":{"@type":"Answer","text":"It needs to reach a live price API. In-app or design-tool previews often block outbound requests — open the page on the live site in a normal browser and tap “Load live data”."}}]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -432,6 +435,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1317,9 +1326,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

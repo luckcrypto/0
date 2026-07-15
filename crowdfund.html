@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Founders Crowdfund &mdash; A Super App Is Coming &middot; Luck.fyi</title>
+<title>Luck.fyi Founders Crowdfund — A Super App Is Coming</title>
 <meta name="description" content="A new super app is coming from Luck. The founders crowdfund opens soon — follow for the reveal and be first in line for founder status.">
 <link rel="canonical" href="https://luck.fyi/crowdfund.html">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -13,14 +15,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Founders Crowdfund &mdash; Coming Soon &middot; Luck.fyi">
+<meta property="og:title" content="Luck.fyi Founders Crowdfund — A Super App Is Coming">
 <meta property="og:description" content="A new super app is coming from Luck. The founders crowdfund opens soon — follow for the reveal and be first in line for founder status.">
 <meta property="og:url" content="https://luck.fyi/crowdfund.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Founders Crowdfund &mdash; Coming Soon &middot; Luck.fyi">
+<meta name="twitter:title" content="Luck.fyi Founders Crowdfund — A Super App Is Coming">
 <meta name="twitter:description" content="A new super app is coming from Luck. The founders crowdfund opens soon — follow for the reveal and be first in line for founder status.">
 
 <!-- Analytics -->
@@ -48,8 +50,6 @@ gtag('config', 'AW-994002853');
 <!-- Schema -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Luck.fyi", "url": "https://luck.fyi", "logo": "https://luck.fyi/assets/img/fav.png", "email": "business@luck.fyi", "sameAs": ["https://x.com/theLuckCrypto", "https://www.instagram.com/luckfyi", "https://www.youtube.com/@LUCKCRYPTO"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://luck.fyi/"}, {"@type": "ListItem", "position": 2, "name": "Founders Crowdfund", "item": "https://luck.fyi/crowdfund.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is backing this an investment?", "acceptedAnswer": {"@type": "Answer", "text": "No. This is a creative crowdfunding project, not an investment. Pledges are not the purchase of shares, securities, tokens, or any financial instrument. You will not receive equity, interest, dividends, profit share, or any financial return. Your pledge supports development, and rewards are perks to thank you for that support."}}, {"@type": "Question", "name": "What are you building?", "acceptedAnswer": {"@type": "Answer", "text": "A new super app, a step beyond our current tools. Exactly what it does is intentionally kept under wraps for now and will be revealed when the founders crowdfund opens. Backing is about supporting the build and securing founder rewards, not buying a known product."}}, {"@type": "Question", "name": "When does the crowdfund open?", "acceptedAnswer": {"@type": "Answer", "text": "Soon. No pledges are being taken yet. Follow our channels or join the founders list to be notified the moment it opens, with full details and terms published before anyone pledges."}}, {"@type": "Question", "name": "What will backers get?", "acceptedAnswer": {"@type": "Answer", "text": "Founding-backer status and limited founder perks such as early access, your name in the credits, and founder collectibles. Perks are rewards for supporting a creative project, not a financial product, and some tiers will be limited in quantity."}}, {"@type": "Question", "name": "What are the risks?", "acceptedAnswer": {"@type": "Answer", "text": "Crowdfunding carries real risk. Independent projects can slip on timelines or, in rare cases, fail to deliver. Only ever pledge an amount you are comfortable contributing to a creative project. The funding model, timelines, and what happens if a goal is not met will be stated clearly before you confirm any pledge."}}]}</script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -630,6 +630,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1445,9 +1451,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

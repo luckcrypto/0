@@ -4,9 +4,10 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Contact Luck.fyi — Get in Touch, Business &amp; Support | Luck.fyi</title>
+<title>Contact Luck.fyi — Business &amp; Support</title>
 <meta name="description" content="Get in touch with Luck.fyi — questions, feedback, partnership and press enquiries. We reply to genuine messages as fast as we can.">
 <meta name="keywords" content="contact luck.fyi, luck crypto contact, business enquiries, support, partnership">
 <link rel="canonical" href="https://luck.fyi/contact.html">
@@ -15,16 +16,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luck.fyi">
-<meta property="og:title" content="Contact Luck.fyi">
+<meta property="og:title" content="Contact Luck.fyi — Business &amp; Support">
 <meta property="og:description" content="Get in touch with Luck.fyi — questions, feedback, partnership and press enquiries. We reply to genuine messages as fast as we can.">
 <meta property="og:url" content="https://luck.fyi/contact.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact Luck.fyi">
+<meta name="twitter:title" content="Contact Luck.fyi — Business &amp; Support">
 <meta name="twitter:description" content="Get in touch with Luck.fyi — questions, feedback, partnership and press enquiries. We reply to genuine messages as fast as we can.">
 
 <!-- Analytics -->
@@ -56,7 +57,9 @@ gtag('config', 'AW-994002853');
 <!-- Schema: Breadcrumb -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://luck.fyi/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://luck.fyi/contact.html"}]}</script>
 <!-- Schema: FAQ -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I contact Luck.fyi?", "acceptedAnswer": {"@type": "Answer", "text": "Email business@luck.fyi for any enquiry, use the message form on this page, or reach us on YouTube, X and Instagram. We read everything, though we cannot always reply to every message."}}, {"@type": "Question", "name": "How quickly will I get a reply?", "acceptedAnswer": {"@type": "Answer", "text": "We aim to respond to genuine business, partnership and support enquiries within a few business days. Volume varies, so please be patient and avoid sending duplicates."}}, {"@type": "Question", "name": "Can you give me financial or investment advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. Luck.fyi is an education and tools project and cannot provide personalised financial, investment, legal or tax advice. Please consult a qualified professional for decisions that affect your money."}}, {"@type": "Question", "name": "Do you offer support for the tools?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If a tool is not working, email business@luck.fyi with the page, your device and browser, and a short description of what happened, and we will look into it."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I contact Luck.fyi?","acceptedAnswer":{"@type":"Answer","text":"Email business@luck.fyi , use the message form on this page, or reach us on YouTube, X and Instagram. We read everything, though we can't always reply to every message."}},{"@type":"Question","name":"How quickly will I get a reply?","acceptedAnswer":{"@type":"Answer","text":"We aim to respond to genuine business, partnership and support enquiries within a few business days. Volume varies, so please be patient and avoid sending duplicates."}},{"@type":"Question","name":"Can you give me financial or investment advice?","acceptedAnswer":{"@type":"Answer","text":"No. Luck.fyi is an education and tools project and can't provide personalised financial, investment, legal or tax advice. Please consult a qualified professional for decisions that affect your money."}},{"@type":"Question","name":"Do you offer support for the tools?","acceptedAnswer":{"@type":"Answer","text":"Yes — if a tool isn't working, email business@luck.fyi with the page, your device and browser, and a short description of what happened, and we'll look into it."}}]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -430,6 +433,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1208,9 +1217,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>

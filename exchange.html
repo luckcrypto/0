@@ -4,9 +4,11 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" id="themeColorMeta">
+<meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
 <script>(function(){var d=document.documentElement,dark=false;try{dark=localStorage.getItem("luck-theme")==="dark";}catch(e){}if(!dark)d.classList.add("light");var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",dark?"#15111f":"#ffffff");})();</script>
-<title>Demo Crypto Exchange · Practice Trading Simulator | Luck.fyi</title>
+<title>Demo Crypto Exchange — Free Practice Trading Sim</title>
 <meta name="description" content="A free, realistic crypto trading simulator — practice spot trading with a live-style order book, candlestick charts, and pretend balances.">
 <link rel="canonical" href="https://luck.fyi/exchange.html">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -14,14 +16,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#10b981">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#ffcc57">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Demo Crypto Exchange · Practice Trading Simulator">
+<meta property="og:title" content="Demo Crypto Exchange — Free Practice Trading Sim">
 <meta property="og:description" content="A free, realistic crypto trading simulator — practice spot trading with a live-style order book, candlestick charts, and pretend balances.">
 <meta property="og:url" content="https://luck.fyi/exchange.html">
 <meta property="og:image" content="https://luck.fyi/assets/img/og-main.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Demo Crypto Exchange · Practice Trading Simulator">
+<meta name="twitter:title" content="Demo Crypto Exchange — Free Practice Trading Sim">
 <meta name="twitter:description" content="A free, realistic crypto trading simulator — practice spot trading with a live-style order book, candlestick charts, and pretend balances.">
 
 <!-- Analytics -->
@@ -49,7 +51,9 @@ gtag('config', 'AW-994002853');
 <!-- Schema -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Luck.fyi", "url": "https://luck.fyi", "logo": "https://luck.fyi/assets/img/fav.png", "email": "business@luck.fyi", "sameAs": ["https://x.com/theLuckCrypto", "https://www.instagram.com/luckfyi", "https://www.youtube.com/@LUCKCRYPTO"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://luck.fyi/"}, {"@type": "ListItem", "position": 2, "name": "Demo Exchange", "item": "https://luck.fyi/exchange.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this a real crypto exchange?", "acceptedAnswer": {"@type": "Answer", "text": "No. This is a free trading simulator built for learning and entertainment. It does not hold funds, connect to any exchange, or place real orders. All balances are pretend demo credits, and nothing is ever bought, sold, deposited, or withdrawn."}}, {"@type": "Question", "name": "Are the prices real?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. When the page loads, a single request pulls real CoinGecko market data — prices, 24h stats and 7-day charts — for the top 200 coins. There are no hardcoded or placeholder prices; if the request cannot complete, prices simply show as unavailable and can be retried. The order book and recent trades are indicative, because there is no free real-time depth feed. Turning on Showtime FX simulates price movement, whale alerts and news for entertainment, clearly labelled as such."}}, {"@type": "Question", "name": "Can I make or lose real money here?", "acceptedAnswer": {"@type": "Answer", "text": "No. There is no real money involved at any point. You cannot deposit, withdraw, win, or lose anything. The simulator exists purely to let you practice navigating a trading interface in a risk-free way."}}, {"@type": "Question", "name": "Why simulate the order book and live prices instead of streaming them?", "acceptedAnswer": {"@type": "Answer", "text": "Streaming live data would require constant requests that quickly hit rate limits and break the page. Sampling once and simulating the live behaviour keeps the demo fast and reliable, and it is clearly labelled as a simulation throughout."}}, {"@type": "Question", "name": "Is using a real exchange risky?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Real crypto trading is high risk and volatile, and a large share of retail traders lose money. Nothing here is financial advice. If you ever trade for real, use a licensed, regulated platform, understand the risks, and never trade money you cannot afford to lose."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this a real crypto exchange?","acceptedAnswer":{"@type":"Answer","text":"No. It's a free trading simulator for learning and entertainment. It doesn't hold funds, connect to any exchange, or place real orders. All balances are pretend demo credits — nothing is ever bought, sold, deposited, or withdrawn."}},{"@type":"Question","name":"Are the prices real?","acceptedAnswer":{"@type":"Answer","text":"Yes — when the page loads, a single request pulls real CoinGecko data (prices, 24h stats, 7-day charts) for the top 200 coins. There are no hardcoded or placeholder prices: if it can't load, prices just show as unavailable and you can tap Refresh to retry. The order book and recent trades are indicative (no free real-t"}},{"@type":"Question","name":"Can I make or lose real money here?","acceptedAnswer":{"@type":"Answer","text":"No. There's no real money at any point — you can't deposit, withdraw, win, or lose anything. It's purely a risk-free way to practise navigating a trading interface."}},{"@type":"Question","name":"Why simulate the order book and live prices?","acceptedAnswer":{"@type":"Answer","text":"Streaming truly live data would need constant requests that quickly hit rate limits and break the page. Sampling once and simulating the live behaviour keeps it fast and reliable — and it's clearly labelled as a simulation throughout."}},{"@type":"Question","name":"Is using a real exchange risky?","acceptedAnswer":{"@type":"Answer","text":"Yes — real crypto trading is high risk and volatile, and many retail traders lose money. Nothing here is financial advice. If you trade for real, use a licensed, regulated platform, understand the risks, and never trade money you can't afford to lose."}}]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -591,6 +595,12 @@ html.light .lk-eq-luck{background-image:linear-gradient(100deg,#8a6309,#b8730a)}
 /* ===== nav theme-toggle button (both modes) ===== */
 .mn-theme{flex:0 0 auto;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;line-height:1;padding:0;transition:transform .15s ease,border-color .15s ease,background .2s ease}
 .mn-theme:hover{border-color:var(--gold);transform:translateY(-1px)}
+</style>
+<style id="theme-surface">/* theme-color · html background · nav — three places, one colour.
+   The <html> background is what the mobile rubber-band/overscroll reveals; it MUST equal
+   the theme-color meta and the opaque nav shell, or the top of the screen seams. */
+html{background:#15111f;color-scheme:dark}
+html.light{background:#ffffff;color-scheme:light}
 </style>
 </head>
 <body>
@@ -1925,9 +1935,5 @@ html.light .mn-panel{box-shadow:0 26px 56px -32px rgba(96,116,166,.26)}
   sync();
 })();
 </script>
-<style id="theme-color-scheme">/* native UI (scrollbars, form controls, overscroll) follows the active theme */
-html{color-scheme:dark}
-html.light{color-scheme:light}
-</style>
 </body>
 </html>
