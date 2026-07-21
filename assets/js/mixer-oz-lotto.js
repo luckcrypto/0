@@ -95,7 +95,7 @@ function startLotteryDrum(canvasId) {
     let rotationCW = 0.025, rotationCCW = 0.058;
     function drawDrum() {
         const cx = centerX, cy = centerY, r = drumRadius;
-        const light = document.documentElement.classList.contains('light');
+        const light = !document.documentElement.classList.contains('dark');
         const glass = ctx.createRadialGradient(cx - r*0.35, cy - r*0.35, r*0.1, cx, cy, r);
         glass.addColorStop(0, 'rgba(245,250,255,0.92)'); glass.addColorStop(0.4, 'rgba(220,235,255,0.75)');
         glass.addColorStop(0.7, 'rgba(200,220,245,0.55)'); glass.addColorStop(1, 'rgba(180,200,230,0.40)');
