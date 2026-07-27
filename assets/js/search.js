@@ -2,6 +2,8 @@
    Pairs with assets/js/search-index.js (window.SEARCH_INDEX).
    Injects its own overlay + styles; matches the site's tokens (gold/violet, --radius, fonts). */
 (function(){
+var LKS_L=(function(){var T={en:{type:'Type to search %n pages\u2026',none:'No results for \u201c%q\u201d',ph:'Search generators, odds, guides\u2026',aria:'Search luck.fyi'},es:{type:'Escribe para buscar en %n p\u00e1ginas\u2026',none:'Sin resultados para \u00ab%q\u00bb',ph:'Busca generadores, probabilidades, gu\u00edas\u2026',aria:'Buscar en Luck.fyi'},fr:{type:'\u00c9crivez pour chercher dans %n pages\u2026',none:'Aucun r\u00e9sultat pour \u00ab%q\u00bb',ph:'Cherchez g\u00e9n\u00e9rateurs, cotes, guides\u2026',aria:'Rechercher sur Luck.fyi'},de:{type:'Tippen, um %n Seiten zu durchsuchen\u2026',none:'Keine Ergebnisse f\u00fcr \u201e%q\u201c',ph:'Generatoren, Quoten, Guides suchen\u2026',aria:'Luck.fyi durchsuchen'},it:{type:'Scrivi per cercare in %n pagine\u2026',none:'Nessun risultato per \u00ab%q\u00bb',ph:'Cerca generatori, quote, guide\u2026',aria:'Cerca in Luck.fyi'},pt:{type:'Escreva para pesquisar em %n p\u00e1ginas\u2026',none:'Sem resultados para \u201c%q\u201d',ph:'Pesquise geradores, probabilidades, guias\u2026',aria:'Pesquisar no Luck.fyi'},zh:{type:'\u8f93\u5165\u4ee5\u641c\u7d22 %n \u4e2a\u9875\u9762\u2026',none:'\u6ca1\u6709\u4e0e\u201c%q\u201d\u5339\u914d\u7684\u7ed3\u679c',ph:'\u641c\u7d22\u751f\u6210\u5668\u3001\u8d54\u7387\u3001\u6307\u5357\u2026',aria:'\u641c\u7d22 Luck.fyi'}};var k=(document.documentElement.lang||'en').slice(0,2).toLowerCase();return T[k]||T.en;})();
+
   if(window.__luckSearch) return; window.__luckSearch=true;
 
   /* ---------- styles (self-contained; reads the site's CSS vars) ---------- */
@@ -48,7 +50,7 @@
   var scrim=document.createElement('div'); scrim.className='lks-scrim';
   var box=document.createElement('div'); box.className='lks-box';
   box.innerHTML='<div class="lks-card"><div class="lks-inp">'+SEARCH_SVG
-    +'<input type="text" placeholder="Search generators, odds, guides…" aria-label="Search luck.fyi" autocomplete="off" spellcheck="false">'
+    +'<input type="text" placeholder="'+LKS_L.ph+'" aria-label="'+LKS_L.aria+'" autocomplete="off" spellcheck="false">'
     +'<span class="lks-kbd">esc</span></div><div class="lks-list" role="listbox"></div></div>';
   function init(){
     if(!document.body){ return setTimeout(init,10); }
@@ -83,8 +85,8 @@
 
   function render(q){
     items=search(q); sel=items.length?0:-1;
-    if(!q){ list.innerHTML='<div class="lks-empty">Type to search '+((window.SEARCH_INDEX||[]).length)+' pages…</div>'; return; }
-    if(!items.length){ list.innerHTML='<div class="lks-empty">No results for “'+esc(q)+'”</div>'; return; }
+    if(!q){ list.innerHTML='<div class="lks-empty">'+LKS_L.type.replace('%n',(window.SEARCH_INDEX||[]).length)+'</div>'; return; }
+    if(!items.length){ list.innerHTML='<div class="lks-empty">'+LKS_L.none.replace('%q',esc(q))+'</div>'; return; }
     list.innerHTML=items.map(function(it,i){
       return '<a class="lks-item'+(i===sel?' sel':'')+'" href="'+it.u+'" data-i="'+i+'">'
         +'<span class="lks-txt"><div class="lks-t">'+esc(it.t)+'</div>'
