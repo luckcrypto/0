@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#ffffff"/>
-  <circle cx="32" cy="32" r="25.5" fill="#111111"/>
-  <path d="M17 21 A25.5 25.5 0 0 1 41 15" fill="none" stroke="#3a3a40" stroke-width="3" stroke-linecap="round" opacity=".85"/>
-  <circle cx="32" cy="32" r="13.5" fill="#ffffff"/>
-  <text x="32" y="33" font-family="'DejaVu Sans','Arial',sans-serif" font-weight="800" font-size="22"
-        text-anchor="middle" dominant-baseline="central" fill="#111111">8</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Luck.fyi">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13252E"/><stop offset="1" stop-color="#070E12"/>
+    </linearGradient>
+    <linearGradient id="ring" x1=".12" y1="0" x2=".88" y2="1">
+      <stop offset="0" stop-color="#7FF0F8"/><stop offset=".55" stop-color="#2ED9E8"/><stop offset="1" stop-color="#097180"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#tile)"/>
+  <circle cx="32" cy="32" r="22.5" fill="none" stroke="url(#ring)" stroke-width="5"/>
+  <path d="M11.95 21.79 A22.5 22.5 0 0 1 25.05 10.60" fill="none" stroke="#EAFEFF" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+  <path d="M21.8 18.5 H42.3 V24 L32.6 45.5 H25.4 L35.4 24 H21.8 Z" fill="#FAFBFC"/>
 </svg>
