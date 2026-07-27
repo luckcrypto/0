@@ -1,6 +1,6 @@
 {
   "id": "/",
-  "name": "Luck.fyi — Free Lottery Generators & Odds",
+  "name": "Luck.fyi \u2014 Free Lottery Generators & Odds",
   "short_name": "Luck.fyi",
   "description": "Provably fair lottery number generators, real odds and crypto tools. No accounts, no sign-ups.",
   "lang": "en-GB",
@@ -11,7 +11,11 @@
   "orientation": "any",
   "background_color": "#FAFBFC",
   "theme_color": "#FAFBFC",
-  "categories": ["utilities", "finance", "entertainment"],
+  "categories": [
+    "utilities",
+    "finance",
+    "entertainment"
+  ],
   "icons": [
     {
       "src": "/assets/img/icon-192.png",
@@ -26,7 +30,7 @@
       "purpose": "any"
     },
     {
-      "src": "/assets/img/icon-512.png",
+      "src": "/assets/img/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
